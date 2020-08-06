@@ -1,0 +1,887 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+/**************************Global*/
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+ :root {
+    --logo-font: 'Ubuntu Condensed', sans-serif;
+    --main-font: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.mg-0 {
+    margin: 0 !important;
+}
+
+
+/************************************************************************************************************Header*/
+
+
+/************************************************************************************************************Header*/
+
+
+/************************************************************************************************************Header*/
+
+
+/************************************************************************************************************Header*/
+
+
+/************************************************************************************************************Header*/
+
+
+/************************************************************************************************************Header*/
+
+
+/************************************************************************************************************Header*/
+
+
+/************************************************************************************************************Header*/
+
+
+/************************************************************************************************************Header*/
+
+header {
+    position: fixed;
+    width: 100%;
+    max-width: 133rem;
+    font-family: var(--main-font);
+}
+
+#navbar {
+    transition: 0.8s;
+}
+
+.nav {
+    background-image: linear-gradient(black, transparent);
+    padding: .5rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/**********List-1*/
+
+.list-1-item {
+    display: inline-block;
+    transition: .5s linear;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+}
+
+.list-1-item .logo {
+    font-size: 2.2rem !important;
+    font-weight: bold;
+    font-family: var(--logo-font);
+    color: rgb(255, 255, 255);
+}
+
+
+/************Search*/
+
+.search-icon {
+    width: auto;
+    font-size: 1.2rem;
+    color: snow;
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 15px;
+}
+
+.search-input {
+    color: snow;
+    font-size: .8rem;
+    text-align: center;
+    position: relative;
+    width: 300px;
+    padding: .7rem 3rem;
+    border: none;
+    outline: none;
+    border-radius: 1.2rem;
+    background-color: rgb(150, 148, 147);
+    opacity: .7;
+    transition: .5s linear;
+}
+
+.search-input:hover {
+    color: snow;
+    background-color: rgb(143, 141, 138);
+    opacity: .5;
+}
+
+
+/* The Overlay (background) */
+
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    height: 100%;
+    width: 0;
+    position: fixed;
+    /* Stay in place */
+    z-index: 4;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    /* Black fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/opacity */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    transition: 1s;
+    /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+
+/* Position the content inside the overlay */
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    /* 25% from the top */
+    width: 100%;
+    /* 100% width */
+    text-align: center;
+    /* Centered text/links */
+    margin-top: 30px;
+    /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+
+/* The navigation links inside the overlay */
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    /* Display block instead of inline */
+    transition: 0.3s;
+    /* Transition effects on hover (color) */
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+
+/* Position the close button (top right corner) */
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+
+/**********************List-2*/
+
+.regestr-btn,
+.sign-btn {
+    padding: .8rem 2.2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.regestr-btn {
+    color: black;
+    background-color: rgb(255, 255, 255);
+    padding: .8rem 2.2rem;
+    transition: .1s linear;
+    font-weight: bold;
+}
+
+.regestr-btn:hover {
+    padding: 1rem 2.2rem;
+}
+
+.sign-btn {
+    color: snow;
+}
+
+
+/************************************************************************************************************SectionOne*/
+
+
+/************************************************************************************************************SectionOne*/
+
+
+/************************************************************************************************************SectionOne*/
+
+
+/************************************************************************************************************SectionOne*/
+
+
+/************************************************************************************************************SectionOne*/
+
+
+/************************************************************************************************************SectionOne*/
+
+
+/************************************************************************************************************SectionOne*/
+
+
+/************************************************************************************************************SectionOne*/
+
+
+/************************************************************************************************************SectionOne*/
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text {
+    margin-top: 200px;
+    width: 500px;
+    min-height: 300px;
+}
+
+.title,
+.title-btn {
+    color: snow;
+    font-family: var(--main-font);
+    text-transform: capitalize;
+}
+
+.title {
+    font-size: 4.3rem;
+    margin: 0;
+    line-height: 100%;
+}
+
+.title-text {
+    color: rgb(214, 207, 207);
+    margin: 2.5rem 0;
+    font-family: var(--main-font);
+}
+
+.title-btn {
+    padding: 1rem 4rem;
+    font-size: 1rem;
+    background-color: #FF501A;
+    transition: .1s linear;
+    font-weight: bold;
+}
+
+.title-btn:hover {
+    padding: 1.2rem 4rem;
+}
+
+
+/************************************************************************************************************SectionTow*/
+
+
+/************************************************************************************************************SectionTow*/
+
+
+/************************************************************************************************************SectionTow*/
+
+
+/************************************************************************************************************SectionTow*/
+
+
+/************************************************************************************************************SectionTow*/
+
+
+/************************************************************************************************************SectionTow*/
+
+
+/************************************************************************************************************SectionTow*/
+
+
+/************************************************************************************************************SectionTow*/
+
+.sectionTow {
+    width: 100%;
+    height: 150vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--main-font);
+}
+
+.sectionTow-box {
+    width: 600px;
+    margin: 0 auto;
+    margin-top: -500px;
+    position: relative;
+}
+
+.title-box {
+    margin-bottom: 0;
+    text-align: center;
+    color: snow;
+    font-size: 3.5rem;
+}
+
+.p-box {
+    color: snow;
+    text-align: justify;
+}
+
+.sm-title {
+    color: rgb(202, 201, 201);
+    font-size: .7rem;
+}
+
+.logos-item {
+    display: inline-block;
+    font-size: 3.5rem;
+    margin: 0 2rem;
+    color: snow;
+}
+
+.logos {
+    text-align: center;
+}
+
+.box-btn {
+    background-color: snow;
+    color: black;
+    padding: 1rem 4rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+}
+
+
+/************************************************************************************************************SectionTree*/
+
+
+/************************************************************************************************************SectionTree*/
+
+
+/************************************************************************************************************SectionTree*/
+
+
+/************************************************************************************************************SectionTree*/
+
+
+/************************************************************************************************************SectionTree*/
+
+
+/************************************************************************************************************SectionTree*/
+
+
+/************************************************************************************************************SectionTree*/
+
+
+/************************************************************************************************************SectionTree*/
+
+
+/************************************************************************************************************SectionTree*/
+
+.sectionThree {
+    width: 100%;
+    height: 120vh;
+    background-color: snow;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    font-family: var(--main-font);
+}
+
+.sectionThree-box {
+    width: 600px;
+    margin: 400px auto 0 auto;
+}
+
+.title-3 {
+    margin-bottom: 0;
+    text-align: center;
+    color: rgb(10, 10, 10);
+    font-size: 3.5rem;
+}
+
+.title-3-text {
+    color: rgb(8, 8, 8);
+    text-align: justify;
+}
+
+.title-list-item {
+    display: inline-block;
+    font-size: 1.5rem;
+    margin: 1.5rem 1.2rem;
+    color: rgb(2, 2, 2);
+}
+
+.title-3-btn {
+    background-color: #26262D;
+    color: snow;
+    padding: 1rem 4rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .1s linear;
+    font-weight: bold;
+}
+
+
+/************************************************************************************************************SectionFoor*/
+
+
+/************************************************************************************************************SectionFoor*/
+
+
+/************************************************************************************************************SectionFoor*/
+
+
+/************************************************************************************************************SectionFoor*/
+
+
+/************************************************************************************************************SectionFoor*/
+
+
+/************************************************************************************************************SectionFoor*/
+
+
+/************************************************************************************************************SectionFoor*/
+
+
+/************************************************************************************************************SectionFoor*/
+
+
+/************************************************************************************************************SectionFoor*/
+
+.sectionFoor {
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--main-font);
+}
+
+.box-4 {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.box-4-title {
+    font-size: 2.1rem;
+    color: snow;
+    text-align: center;
+    margin: 0;
+}
+
+.box-4-text {
+    font-size: 1rem;
+    color: rgb(243, 235, 235);
+    text-align: justify;
+    opacity: .8;
+    margin: 1.5rem 0;
+    line-height: 150%;
+}
+
+.box-4-btn {
+    background-color: snow;
+    color: black;
+    padding: 1rem 4rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .1s linear;
+    font-weight: bold;
+}
+
+
+/************************************************************************************************************Footer*/
+
+
+/************************************************************************************************************Footer*/
+
+
+/************************************************************************************************************Footer*/
+
+
+/************************************************************************************************************Footer*/
+
+
+/************************************************************************************************************Footer*/
+
+
+/************************************************************************************************************Footer*/
+
+
+/************************************************************************************************************Footer*/
+
+
+/************************************************************************************************************Footer*/
+
+
+/************************************************************************************************************Footer*/
+
+
+/************************************************************************************************************Footer*/
+
+.footer {
+    background-color: #202026;
+    font-family: var(--main-font);
+    padding: 4rem 0;
+}
+
+
+/********RowOne*/
+
+.row-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-media {
+    margin-right: 170px;
+}
+
+.icon {
+    display: inline-block;
+    color: snow;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+
+/********RowTow*/
+
+.row-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.border-1 {
+    width: 300px;
+    height: 2px;
+    background-color: rgb(114, 113, 112);
+}
+
+.border-2 {
+    width: 300px;
+    height: 2px;
+    background-color: rgb(114, 113, 112);
+}
+
+
+/************RowThree*/
+
+.flex {
+    display: block;
+}
+
+.row-3 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    min-width: 100%;
+}
+
+.col {
+    width: 20%;
+    height: 200px;
+}
+
+.col-title {
+    font-size: .8rem;
+    margin: 2rem 0 1rem 0;
+    color: gray;
+}
+
+.list-col {
+    padding: 0 0 2rem 0;
+}
+
+.col-item {
+    font-size: .7rem;
+    width: 100%;
+    color: snow;
+}
+
+.col-privecy {
+    margin: 0 0 1rem 0;
+    background-color: none;
+    width: 100%;
+    color: lightslategray;
+}
+
+.privecy {
+    width: 25%;
+    font-size: .7rem;
+    line-height: 200%;
+}
+
+
+/*********************RowFor*/
+
+.row-4 {
+    width: 100%;
+}
+
+.border-3 {
+    margin: 4rem 0;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(114, 113, 112);
+}
+
+
+/**************************RowFive*/
+
+.row-5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app {
+    background-color: transparent;
+    color: rgb(107, 105, 105);
+    border: 1px solid rgb(107, 105, 105);
+    padding: 1.5rem;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app ion-icon {
+    font-size: 2rem;
+}
+
+
+/******************************RowSex*/
+
+.row-6 {
+    margin: 3rem 0;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: .6rem;
+    color: rgb(150, 148, 147);
+    letter-spacing: 2px;
+}
+
+.nch {
+    font-size: .7rem !important;
+    color: rgb(26, 144, 255) !important;
+}
+
+
+/*****************************************************************************************************Responsive*/
+
+
+/*****************************************************************************************************Responsive*/
+
+
+/*****************************************************************************************************Responsive*/
+
+
+/*****************************************************************************************************Responsive*/
+
+
+/*****************************************************************************************************Responsive*/
+
+
+/*****************************************************************************************************Responsive*/
+
+
+/*****************************************************************************************************Responsive*/
+
+
+/*****************************************************************************************************Responsive*/
+
+
+/*****************************************************************************************************Responsive*/
+
+
+/*****************************************************************************************************Responsive*/
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+@media screen and (max-width: 1010px) {
+    .search-icon {
+        display: none;
+    }
+    .search-input {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .regestr-btn,
+    .sign-btn {
+        padding: .5rem 1.5rem;
+        font-size: .9rem;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .list-1 {
+        margin-left: -30px;
+    }
+    .list-1-item .logo {
+        font-size: 2rem !important;
+        margin-left: 5px;
+    }
+    .list-1-item {
+        margin-left: 0;
+    }
+    .regestr-btn,
+    .sign-btn {
+        padding: .5rem 1rem;
+        font-size: .7rem;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+    .regestr-btn:hover,
+    .sign-btn:hover {
+        padding: .5rem 1rem;
+    }
+    .hero-text {
+        width: 100%;
+    }
+    .title {
+        text-align: center;
+        font-size: 2rem;
+    }
+    .title-text {
+        font-size: .9rem !important;
+        margin: 2rem 0;
+    }
+    .title-btn {
+        font-size: .8rem;
+        padding: 1rem 2rem;
+        margin-left: 30%;
+    }
+    .title-btn:hover {
+        padding: 1rem 2rem;
+    }
+    .sectionTow {
+        height: 100vh;
+    }
+    .sectionTow-box {
+        width: 300px;
+        margin-top: -300px;
+        position: relative;
+    }
+    .sectionThree {
+        height: 80vh;
+        background-position: top;
+    }
+    .sectionThree-box {
+        width: 100%;
+        margin: 10rem 0;
+    }
+    .title-3 {
+        font-size: 2rem;
+    }
+    .title-box {
+        font-size: 2rem;
+    }
+    .title-3-text {
+        font-size: .8rem;
+        width: 100%;
+    }
+    .title-3-btn {
+        font-size: .8rem;
+        padding: 1rem 2rem;
+    }
+    .box-4 {
+        width: 100%;
+    }
+    .box-4-title {
+        font-size: 1.5rem;
+    }
+    .box-4-text {
+        font-size: .8rem;
+        text-align: center;
+    }
+    .box-4-btn {
+        font-size: .8rem;
+        padding: 1rem 2rem;
+    }
+    .p-box {
+        font-size: .8rem !important;
+    }
+    .sm-title {
+        font-size: .6rem;
+    }
+    .logos-item {
+        font-size: 1rem;
+        margin: 0 1rem;
+    }
+    .logos {
+        text-align: left;
+    }
+    .box-btn {
+        font-size: .8rem;
+        padding: 1rem 2rem;
+    }
+    .social-media {
+        margin-right: 0px;
+    }
+    .border-1,
+    .border-2 {
+        width: 40%;
+    }
+    .col {
+        min-width: 50%;
+        height: auto;
+    }
+    .privecy {
+        width: 90%;
+    }
+}

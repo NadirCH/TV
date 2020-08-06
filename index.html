@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Tub</title>
+
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="css/main.css">
+    <script src='js/main.js'></script>
+
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <script src="js/all.min.js"></script>
+    <!--Icon-->
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <!--Animation-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+</head>
+
+
+<style>
+    .hero {
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4));
+        background-image: url('https://images.unsplash.com/photo-1546513027-cd32829de838?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1576&q=80');
+        background-position: bottom;
+    }
+    
+    .sectionTow {
+        background-image: url(img/bg-1.png);
+    }
+    
+    .sectionThree {
+        background-image: url(img/bg-2.png);
+    }
+    
+    .sectionFoor {
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url(img/bg-3.png);
+    }
+</style>
+
+
+
+
+
+
+
+<body>
+    <header id="navbar" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+        <nav class="nav">
+
+            <ul class="list-1">
+                <li class="list-1-item" onclick="openNav()"><i class="fas fa-bars"></i></li>
+                <li class="list-1-item"><a class="logo" href="#">tubi</a></li>
+            </ul>
+
+
+            <!-- The overlay -->
+            <div id="myNav" class="overlay">
+
+                <!-- Button to close the overlay navigation -->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                <!-- Overlay content -->
+                <div class="overlay-content">
+
+                    <a href="#">Popular</a>
+                    <a href="#">Genres</a>
+                    <a href="#">Collections</a>
+                    <a href="">Channels</a>
+                    <a href="#">About</a>
+                </div>
+
+            </div>
+
+
+            <form class="search" action="search">
+                <div class="search-icon"><i class="fas fa-search"></i></div>
+                <input class="search-input" type="text" placeholder="Find Movies, TV Shows and More">
+            </form>
+
+            <ul class="list-2">
+                <a class="regestr-btn" href="#">Register</a>
+                <a class="sign-btn" href="#">Sign in</a>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-text">
+                <h1 class="title">Movies. TV. Free.</h1>
+                <p class="title-text">Thousands of movies and TV shows. Available Anywhere. Always Free.</p>
+                <a class="title-btn" href="#">Watch now</a>
+            </div>
+        </div>
+    </section>
+    <section class="sectionTow">
+        <div class="container">
+            <div class="sectionTow-box">
+                <h1 class="title-box">Thousands of titles</h1>
+                <p class="p-box">
+                    Watch amazing movies and TV shows for free. No subscription fees, and no credit cards. Just thousands of hours of streaming video content from studios like Paramount, Lionsgate, MGM and more.
+                </p>
+                <p class="sm-title">With content from over 200 partners.</p>
+                <ul class="logos">
+                    <li class="logos-item">
+                        <ion-icon name="logo-firebase"></ion-icon>
+                    </li>
+                    <li class="logos-item">
+                        <ion-icon name="logo-slack"></ion-icon>
+                    </li>
+                    <li class="logos-item">
+                        <ion-icon name="logo-amazon"></ion-icon>
+                    </li>
+                    <li class="logos-item">
+                        <ion-icon name="logo-vk"></ion-icon>
+                    </li>
+                </ul>
+                <a class="box-btn" href="#">Browse titles</a>
+            </div>
+        </div>
+    </section>
+    <section class="sectionThree">
+        <div class="container">
+            <div class="sectionThree-box">
+                <h1 class="title-3">Stream anywhere</h1>
+                <p class="title-3-text">Tubi is available for free on Android, iOS, Roku, Apple TV, Amazon Fire TV, Xfinity X1, Xbox, Samsung Smart TVs, Sony Smart TVs, PlayStation and the web.</p>
+                <ul class="title-list">
+                    <li class="title-list-item">
+                        <ion-icon name="logo-youtube"></ion-icon>
+                    </li>
+                    <li class="title-list-item">
+                        <ion-icon name="logo-xing"></ion-icon>
+                    </li>
+                    <li class="title-list-item">
+                        <ion-icon name="logo-xbox"></ion-icon>
+                    </li>
+                    <li class="title-list-item">
+                        <ion-icon name="logo-amplify"></ion-icon>
+                    </li>
+                    <li class="title-list-item">
+                        <ion-icon name="logo-amazon"></ion-icon>
+                    </li>
+                    <li class="title-list-item">
+                        <ion-icon name="logo-apple"></ion-icon>
+                    </li>
+                    <li class="title-list-item">
+                        <ion-icon name="logo-twitch"></ion-icon>
+                    </li>
+                    <li class="title-list-item">
+                        <ion-icon name="logo-playstation"></ion-icon>
+                    </li>
+                </ul>
+                <a class="title-3-btn" href="#">Browse titles</a>
+            </div>
+        </div>
+    </section>
+    <section class="sectionFoor">
+        <div class="container">
+            <div class="box-4">
+                <h3 class="box-4-title">Get an account today</h3>
+                <p class="box-4-text">Access free content on all of your devices, sync your queue and continue watching anywhere.</p>
+                <a class="box-4-btn" href="#">Register Free</a>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row-1">
+                <li class="list-1-item mg-0"><a class="logo" href="#">tubi</a></li>
+                <ul class="social-media">
+                    <li class="icon">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </li>
+                    <li class="icon">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </li>
+                    <li class="icon">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </li>
+                </ul>
+            </div>
+            <div class="row-2">
+                <div class="border-1"></div>
+                <div class="border-2"></div>
+            </div>
+
+            <div class="row-3">
+                <div class="col">
+
+                    <ul class="list-col">
+                        <li class="col-title">COMPANY</li>
+                        <li class="col-item">Careers</li>
+                        <li class="col-item">News</li>
+                        <li class="col-item">Press Inquiries</li>
+                    </ul>
+                </div>
+                <div class="col">
+
+                    <ul class="list-col">
+                        <li class="col-title">SUPPORT</li>
+                        <li class="col-item">Support</li>
+                        <li class="col-item">Help Center</li>
+                        <li class="col-item">Supported Devices</li>
+                        <li class="col-item">Activate Your Device</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul class="list-col">
+                        <li class="col-title">PARTNERS</li>
+                        <li class="col-item">Advertise With Us</li>
+                        <li class="col-item">Partnerships</li>
+                        <li class="col-item">Content Submission</li>
+
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul class="list-col">
+                        <li class="col-title">GET THE APPS</li>
+                        <li class="col-item">iOS</li>
+                        <li class="col-item">Android</li>
+                        <li class="col-item">Roku</li>
+                        <li class="col-item">Amazon</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul class="list-col">
+                        <li class="col-title">LEGAL</li>
+                        <li class="col-item">Terms of Use</li>
+                        <li class="col-item">Privacy Policy</li>
+                        <li class="col-item">Do Not Sell My Personal Information</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-privecy">
+                <p class="privecy"> Copyright © 2020 Tubi, Inc.
+                    <br> Tubi is a registered trademark of Tubi, Inc. All rights reserved.
+                </p>
+            </div>
+            <div class="row-4">
+                <div class="border-3">
+                </div>
+
+            </div>
+            <div class="row-5">
+                <a class="app" href="#">
+                    <ion-icon name="logo-apple"></ion-icon>
+                </a>
+                <a class="app" href="#">
+                    <ion-icon name="logo-google-playstore"></ion-icon>
+                </a>
+            </div>
+            <div class="row-6">
+                made with <a class="nch" href="#">NCH</a> in oran
+            </div>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        AOS.init();
+    </script>
+
+
+</body>
+
+</html>
